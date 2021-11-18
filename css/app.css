@@ -5,15 +5,14 @@ body {
     
     font-family: "RobotoRegular";
     background-color: #e9e9e9;
-    border: 0.5rem solid rgb(8, 184, 8);
-}
+    border: 0.5rem solid black;}
 
 a {
     text-decoration: none;
 }
 
 @font-face {
-    font-family: RobotoRegular;
+    font-family: "RobotoRegular";
     src: url('../assets/Fonts/Roboto-Regular.ttf');
 }
 @font-face {
@@ -37,7 +36,7 @@ nav p{
     color: #0c0c0c;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: RobotoBold;
+    font-family: "RobotoBold";
     margin-left: 15px;
 }
 
@@ -51,11 +50,10 @@ nav p{
 
 .headerHome{
     background-color: #e9e9e9;
-    width: 80vw;
+    width: 70%;
     position: absolute;
     margin-top: -7.5vh;
     margin-left: 10vw;
-    
 }
 
 .home {
@@ -64,7 +62,7 @@ nav p{
 
 }
 .widthHome {
-    width: 80vw;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
@@ -79,6 +77,11 @@ nav p{
     font-size: 15px;
     
 }
+body #title{
+    border:5px solid black;
+    padding: 3px;
+    box-shadow: 10px 5px 5px rgb(222, 216, 215 );
+    text-shadow: 5px 5px rgb(222, 216, 215 );}
 
 /*Under*/
 .introHome {
