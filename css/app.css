@@ -1,50 +1,100 @@
 /*ALL*/
 body {
     /*Suppresion des marges du body pour coller les éléments au bord.*/
-    padding: 0px;
-    margin: 0px;
-    font-family: CabinRegular;
+
+    
+    font-family: "RobotoRegular";
     background-color: #e9e9e9;
+    border: 0.5rem solid rgb(8, 184, 8);
+}
+
+a {
+    text-decoration: none;
 }
 
 @font-face {
-    font-family: CabinRegular;
-    src: url('../assets/Fonts/Cabin-Regular.ttf');
+    font-family: RobotoRegular;
+    src: url('../assets/Fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('../assets/Fonts/Roboto-Bold.ttf');
 }
 
 
+/*NAVIGATION*/
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin-left: 10vw;
+}
+nav, li {
+    list-style: none;
+}
 
+nav p{
+    color: #0c0c0c;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+    margin-left: 15px;
+}
 
 
 /*HOME*/
 /*On sélectionne la classe 'imageHomeOpenSpace'*/
 .imageHomeOpenSpace {
     width: 100%;
+    z-index:2;
 }
 
-.home{
+.headerHome{
     background-color: #e9e9e9;
     width: 80vw;
     position: absolute;
-    margin-top: -7vh;
-    margin-left: 15vw;
+    margin-top: -7.5vh;
+    margin-left: 10vw;
+    
+}
+
+.home {
+    margin: auto;
+    margin-top: 10vh;
+
+}
+.widthHome {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
 }
 
 /*Header to page Home*/
-.headerHome {
-
-}
 .headerHome h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 .headerHome h3{
     text-align: center;
+    font-size: 15px;
+    
 }
 
+/*Under*/
+.introHome {
+    text-align: center;
+    margin-top: 5vh;
+}
 
-/*Page Home*/
+.line {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
 
+.displayPages {
+
+}
 
 
 
