@@ -1,0 +1,201 @@
+/*ALL*/
+body {
+    /*Suppresion des marges du body pour coller les éléments au bord.*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "RobotoRegular";
+    background-color: #e9e9e9;
+}
+a{
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url('../assets/Fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('../assets/Fonts/Roboto-Bold.ttf');
+}
+
+
+/*HEADER*/
+.header {
+    background-color: #B1E0B9;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+/*NAVIGATION*/
+/*Desktop*/
+@media(min-width: 1000px){
+    /*On enleve l'affichage du menu mobile*/
+    nav.mobile {
+        display: none;
+    }
+    #iconeOpen {
+        display: none;
+    }
+
+    /*On passe au CSS du menu version Desktop*/
+    nav.desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav.desktop p {
+        margin-left: 45px;
+        font-size: 35px;
+        text-transform: uppercase;
+        color: black;
+        font-family: RobotoBold;
+    }
+    /*CSS, du sous-menu*/
+    nav.desktop>div#ControverseD{
+        display: flex;
+    }
+    nav.desktop>#ControverseD>.submenu {
+        background-color: #e9e9e9;
+        border: 1px solid black;
+        border-bottom-right-radius: 15px;
+        margin-top: -12px;
+        margin-left: 10px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 250px;
+        margin-top: 100px;
+        margin-left: 45px;
+    }
+    nav.desktop>#ControverseD>.submenu p{
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    /*CSS de l'activation du sous-menu*/
+    nav.desktop>div#ControverseD:hover + .submenu {
+        display: flex;
+    }
+}
+
+/*Mobile*/
+
+/*Mobile*/
+/*@media(max-width: 1000px){
+    nav.desktop {
+        display: none;
+    }
+    div.header>div.mobile{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    #iconeOpen>img{
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    div.mobile>nav a>img {
+        height: 45px;
+    }
+    div.mobile>nav a{
+        margin-left: 15px;
+    }
+    div.mobile>nav a:last-child{
+        margin-left: 0px;
+    }
+
+    nav {
+        justify-content: left;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    nav.mobile>div#Controverse>.submenu {
+        background-color: #B1E0B9;
+        border: 1px solid #0c0c0c;
+        border-top: 0px solid;
+        width: 250px;
+        height: 200px;
+        display: none;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    nav.mobile>div#Controverse>.submenu p {
+        color: #0c0c0c;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 2px;
+        flex-direction: column;
+    }
+    nav.mobile>div#Controverse>.submenu a:first-child{
+        margin-top: 8px;
+    }
+    nav.mobile>div#Controverse>.submenu a:last-child{
+        margin-left: 13px;
+    }
+
+    nav.mobile>div#Controverse:hover + nav.mobile .submenu{
+        display: flex;
+    }
+}*/
+
+
+/* Contenu */ 
+body p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.contact {
+    font-family: RobotoRegular;
+}
+
+
+.contact fieldset:first-child{
+    margin-top: 25px;
+}
+.contact fieldset:nth-child(2){
+    margin-top: 25px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 85vw;
+    margin-left: 5vw;
+    border-radius: 10px;
+}
+fieldset label{
+    margin-top: 15px;
+}
+fieldset label:first-child {
+    margin-top: 0px;
+}
+fieldset input{
+    width: 250px;
+    height: 20px;
+    font-size: 20px;
+}
+fieldset select {
+    height: 25px;
+    width: 260px;
+    font-size: 20px;
+}
+input[type=submit]{
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    font-size: 25px;
+    background-color: #B1E0B9;
+}
+
+
+
+
