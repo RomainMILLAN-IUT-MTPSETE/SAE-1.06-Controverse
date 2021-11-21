@@ -16,7 +16,7 @@ p{
 
 }
 @font-face {
-    font-family: "RobotoRegular";
+    font-family: RobotoRegular;
     src: url('../assets/Fonts/Roboto-Regular.ttf');
 }
 @font-face {
@@ -57,16 +57,9 @@ main {
     max-width: 100%;
     margin: auto;} 
 
-@media screen (max-width:800px) {
-    
-    main{
-flex-direction:column}
-}
-    
-}
 main .corpus {
     max-width: 100%;
-
+    font-size: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +71,26 @@ main .corpus {
     border: 2px solid #d0d0d5;
     box-shadow: 6px 5px 5px rgb(222, 216, 215 );
 }
+
+
+
+@media(max-width:992px){
+    
+    main{flex-direction:column;}
+
+    .image{
+        width: 100%;
+        margin: auto;
+        flex-grow: 2;
+        border-radius: 3vh;
+    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+    margin-top: 5vh;
+    border: solid 0.25vh black;
+
+    }
+}
+@media(min-width:992px){
+    
 .image{
 /* paramètre de responsivité du design*/
     width: 25%;
@@ -86,9 +99,6 @@ main .corpus {
     margin-top: 5vh;
     padding:1vh;
     flex-shrink: 1;
-    flex-grow: 1;
+    flex-grow: 1;}
 
-
-
-}
 }
