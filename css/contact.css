@@ -196,6 +196,18 @@ input[type=submit]{
     background-color: #B1E0B9;
 }
 
+@media(min-width: 1000px){
+    fieldset{
+        width: 750px;
+        margin-left: 150px;
+    }
+
+    input[type=submit]{
+        margin-left: 80vw;
+        margin-top: -25px;
+    }
+}
+
 
 
 
