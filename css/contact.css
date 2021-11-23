@@ -24,9 +24,23 @@ a{
 
 /*HEADER*/
 .header {
-    background-color: #B1E0B9;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border:2.5px solid black;
+    padding: 3px;
+    box-shadow: 6px 5px 5px #B1E0B9;
+    text-shadow: 5px 5px rgb(222, 216, 215 );
+    
+    text-align: center;
+    font-size: 2vh;
     height: 100px;
-    border-bottom: 1px solid black;
+    
 }
 
 /*NAVIGATION*/
@@ -192,6 +206,7 @@ input[type=submit]{
     margin: auto;
     margin-top: 15px; 
     margin-bottom: 15px;
+    margin-right: auto;
     font-size: 25px;
     background-color: #B1E0B9;
 }
@@ -201,9 +216,11 @@ input[type=submit]{
         width: 750px;
         margin-left: 150px;
     }
-
+    #message{
+        padding:1vh;
+    }
     input[type=submit]{
-        margin-left: 80vw;
+        margin-left: 81.75vw;
         margin-top: -25px;
     }
 }
