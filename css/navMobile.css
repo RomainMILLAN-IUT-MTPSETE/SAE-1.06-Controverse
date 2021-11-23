@@ -1,0 +1,85 @@
+@media(max-width: 1000px){
+    nav.desktop>*{
+        display: none;
+    }
+}
+ 
+ #menuToggle{
+   display: block;
+   position: relative;
+   top: 50px;
+   left: 50px;
+   z-index: 1;
+ }
+ 
+ #menuToggle a{
+   text-decoration: none;
+   color: #232323;
+ }
+ #menuToggle a:hover{
+   color: #B1E0B9;
+ }
+ 
+ #menuToggle input{
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+     
+   opacity: 0;
+   z-index: 2;
+ }
+ 
+ #menuToggle span{
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 5px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle input:checked ~ span{
+    background-color: #232323;
+ }
+ #menuToggle input ~ span {
+     background-color: #232323;
+ }
+
+ #menu{
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #ededed;
+   border-right: 1px solid #232323;
+   border-bottom: 1px solid #232323;
+   list-style-type: none;
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li{
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ #menuToggle input:checked ~ ul{
+   transform: none;
+ }

@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--LINKS-->
         <!--On lie la page de style 'app-mobile.css' pour le CSS-->
+        <link rel="stylesheet" href="css/navMobile.css">
         <link rel="stylesheet" href="css/contact.css">
         <!--OTHERS-->
         <!--On définie le titre de la page-->
@@ -14,32 +15,30 @@
     </head>
     <body>
         <div class="header">
-            <div class="mobile">
+            <nav class="mobile" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-            </div>
-            <div class="mobile">
-                <a href="#open" id="iconeOpen"><img class="iconeMenuMobile" src="assets/menu.png" alt="Icone Menu"/></a>
-                <nav id="open" class="mobile">
-                    <a href="index.html"><img src="assets/Menu/home.png" alt="Icone Home"/></a>
-                    <a href="contact.html"><img src="assets/Menu/phone.png" alt="Icone contact"></a>
-                    <div id="ControverseM">
-                        <a href="#"><img src="assets/Menu/doc.png" alt="Icone Document"></a>
-                        <div class="submenu">
-                            <a href="page_standard.html"><p>• Chronologie</p></a>
-                            <a href="#"><p>• Chronologie</p></a>
-                            <a href="#"><p>• Chronologie</p></a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+                    <ul id="menu">
+                        <a href="index.html"><li>Accueil</li></a>
+                        <a href="#"><li>Chronologie</li></a>
+                        <a href="#"><li>Aujourd'hui</li></a>
+                        <a href="#"><li>Controverse</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
             <nav class="desktop">
                 <a href="index.html"><p id="accueil">Accueil</p></a>
                 <div id="ControverseD">
                     <a href="#"><p>Controverse</p></a>
                     <div class="submenu">
                         <a href="#"><p>• Chronologie</p></a>
-                        <a href="#"><p>• Chronologie</p></a>
-                        <a href="#"><p>• Chronologie</p></a>
+                        <a href="#"><p>• Aujourd'hui</p></a>
+                        <a href="#"><p>• Controverse</p></a>
                     </div>
                 </div>
                 <a href="contact.html"><p>Contact</p></a>
