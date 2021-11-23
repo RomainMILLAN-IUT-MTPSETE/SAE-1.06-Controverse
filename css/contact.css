@@ -31,15 +31,15 @@ a{
 
 /*NAVIGATION*/
 /*Desktop*/
+nav div.submenu {
+    display: none;
+}
+
 @media(min-width: 1000px){
     /*On enleve l'affichage du menu mobile*/
-    nav.mobile {
+    nav.mobile>#menuToggle {
         display: none;
     }
-    #iconeOpen {
-        display: none;
-    }
-
     /*On passe au CSS du menu version Desktop*/
     nav.desktop {
         display: flex;
@@ -75,73 +75,10 @@ a{
         margin-left: 5px;
     }
     /*CSS de l'activation du sous-menu*/
-    nav.desktop>div#ControverseD:hover + .submenu {
+    nav.desktop>div#ControverseD:hover, div.submenu{
         display: flex;
     }
 }
-
-/*Mobile*/
-
-/*Mobile*/
-/*@media(max-width: 1000px){
-    nav.desktop {
-        display: none;
-    }
-    div.header>div.mobile{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    #iconeOpen>img{
-        height: 60px;
-        margin-top: 15px;
-    }
-
-    div.mobile>nav a>img {
-        height: 45px;
-    }
-    div.mobile>nav a{
-        margin-left: 15px;
-    }
-    div.mobile>nav a:last-child{
-        margin-left: 0px;
-    }
-
-    nav {
-        justify-content: left;
-        margin-left: 0px;
-        margin-top: 25px;
-    }
-
-    nav.mobile>div#Controverse>.submenu {
-        background-color: #B1E0B9;
-        border: 1px solid #0c0c0c;
-        border-top: 0px solid;
-        width: 250px;
-        height: 200px;
-        display: none;
-        flex-direction: column;
-        margin-top: 30px;
-    }
-    nav.mobile>div#Controverse>.submenu p {
-        color: #0c0c0c;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-left: 2px;
-        flex-direction: column;
-    }
-    nav.mobile>div#Controverse>.submenu a:first-child{
-        margin-top: 8px;
-    }
-    nav.mobile>div#Controverse>.submenu a:last-child{
-        margin-left: 13px;
-    }
-
-    nav.mobile>div#Controverse:hover + nav.mobile .submenu{
-        display: flex;
-    }
-}*/
-
 
 /* Contenu */ 
 body p{
