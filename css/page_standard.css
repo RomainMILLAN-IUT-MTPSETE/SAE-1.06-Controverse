@@ -49,11 +49,13 @@ header .container{
 }
 
 /*NAVIGATION*/
-nav{
-    width: 500px;
+
+nav.desktop{
+    width: 50%;
+    margin-left:25%;
     height: 25px;
-    margin:auto;
     display:flex;
+
     align-items: center;
     max-width: 100%;
     flex-direction: row;
@@ -67,19 +69,20 @@ nav{
     padding: 3px;
     box-shadow: 6px 5px 5px #B1E0B9;
     text-align: center;
-    font-size: 2vh;}
+    font-size: 2vh;
+    margin-left:25%;}
 
 
-nav p{
+nav.desktop p{
         margin-left: 5vw;
     }
 #accueil{
         margin-left: 0vw;
     }
-    nav a{
+    nav.desktop a{
         position: relative;
     }
-.submenu{
+nav.desktop .submenu{
     display: none;
 }
 #deroulant:hover .submenu{
@@ -97,28 +100,15 @@ nav p{
 }
 
 
-.submenu p {
+nav.desktop .submenu p {
         color: #0c0c0c;
         font-size: 2vh;
         margin-top: 0px;
         margin-left: 2px;
     }
-.submenu p:first-of-type{
+nav.desktop .submenu p:first-of-type{
         margin-top: 10px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 header .title {
     padding: 3px;
@@ -168,38 +158,45 @@ main .corpus {
     main{flex-direction:column;
         padding:0;
         flex-wrap: wrap;
-        align-items:center;}}
+        align-items:center;}
 
-main> .corpus{
-    margin-left:auto;
-    margin-right:auto;
-    width:90%;
-    font-size:2vh;
-    font-style:bold;
-}
+    main> .corpus{
+        margin-left:auto;
+        margin-right:auto;
+        width:90%;
+        font-size:2vh;
+        font-style:bold;
+    }
 
     .image{
         width: 100%;
         margin: auto;
         flex-grow: 3;
         border-radius: 3vh;
-    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
-    margin-top: 5vh;
-    border: solid 0.25vh black;
+        box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+        margin-top: 5vh;
+        border: solid 0.25vh black;}
 
-    }
+
+
+}
+    
 
 @media(min-width:992px){
     
-.image{
-/* paramètre de responsivité du design*/
-    width: 30%;
-    margin: 3vh;
-    flex-wrap: wrap;
-    border-radius: 3vh;
-    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
-    margin-top: 5vh;
-    flex-shrink: 1;
-    flex-grow: 1;}
-
+    .image{
+    /* paramètre de responsivité du design*/
+        width: 30%;
+        margin: 1vh;
+        clear:both;
+        border-radius: 3vh;
+        box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+        margin-top: 5vh;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    
+    nav.desktop{display:flex;}
+    nav.mobile{display:none;}
+    
 }

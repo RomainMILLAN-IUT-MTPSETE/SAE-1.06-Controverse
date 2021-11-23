@@ -9,6 +9,7 @@
     <!--LINKS-->
     <!--On lie la page de style pour le CSS-->
     <link rel="stylesheet" href="css/page_standard.css">
+    <link rel="stylesheet" href="css/navMobile.css">
     <!--OTHERS-->
     <!--On définie le titre de la page-->
     <title>Chronologie de L'Open Space</title>
@@ -24,7 +25,29 @@
             </div>
         </div>
     </header>
-    <nav class="navigation">
+
+
+
+
+
+
+    <nav class="mobile" role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="index.html"><li>Accueil</li></a>
+                <a href="#"><li>Chronologie</li></a>
+                <a href="#"><li>Aujourd'hui</li></a>
+                <a href="#"><li>Controverse</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+    <nav class="desktop">
         <a href="index.html"><p id="accueil">Accueil</p></a>
         <div id="deroulant">
             <a href="#"><p>Controverse</p></a>
@@ -94,7 +117,9 @@
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                 justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
                 amet.</p>
-        </div><div class="corpus">
+        </div>
+        
+        <div class="corpus">
             <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
 
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
@@ -103,7 +128,7 @@
         </div>
         <!--ET LES IMAGES DOIVENT PRENDRE LA CLASSE image-->
         <img src="assets/Image 1.svg" class="image" alt="Image background HOME" />
-        <img src="assets/Image 1.svg" class="image" alt="Image background HOME" />
+
 
 
     </main>
