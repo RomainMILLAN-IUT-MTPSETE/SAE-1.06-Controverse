@@ -66,7 +66,24 @@ main .corpus {
     
 /*Si la page est au dessus de 992px*/
 @media(min-width:992px){
+
+
+    main{flex-direction:row;
+            padding:0;
+            flex-wrap: wrap;
+            align-items:center;}
     
+    main> .corpus{
+            margin-left:auto;
+            margin-right:auto;
+            width:90%;
+            font-size:2vh;
+            font-style:bold;
+        }
+    nav.desktop{display:flex;
+        transition-delay: 2s;}
+    nav.mobile{display:none;}
+        
     .image{
     /* paramètre de responsivité du design*/
         width: 30%;
