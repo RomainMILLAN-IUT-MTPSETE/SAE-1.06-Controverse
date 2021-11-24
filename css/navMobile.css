@@ -1,3 +1,11 @@
+.desktop {
+  display: none;
+}
+
+.mobile--nav {
+  position: fixed;
+}
+
 #menuToggle{
  display: block;
  position: relative;
@@ -26,7 +34,7 @@
  z-index: 2;
 }
 
-#menuToggle span{
+#menuToggle .menu-icon{
  display: block;
  width: 33px;
  height: 4px;
@@ -45,33 +53,48 @@
              opacity 0.55s ease;
 }
 
-#menuToggle input:checked ~ span{
+#menuToggle input[type=checkbox]{
+  margin-left: -10px;
+}
+#menuToggle input:checked ~ .menu-icon{
   background-color: #232323;
 }
-#menuToggle input ~ span {
+#menuToggle input ~ .menu-icon {
    background-color: #232323;
+   margin-left: -15px;
 }
 
 #menu{
  position: absolute;
  width: 300px;
- margin: -100px 0 0 -50px;
+ margin: -100px 0 0 -60px;
  padding: 50px;
  padding-top: 125px;
- 
  background: #ededed;
  border-right: 1px solid #232323;
  border-bottom: 1px solid #232323;
  list-style-type: none;
- 
  transform-origin: 0% 0%;
  transform: translate(-100%, 0);
- transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ transition: transform 0.5s cubic-bezier(0.80,0.5,0.25,1.5);
 }
 
-#menu li{
+#menu a{
  padding: 10px 0;
  font-size: 22px;
+}
+
+.color-nav {
+  color: var(--main-bg-color);
+  animation: random 5s infinite;
+  margin-right: 15px;
+}
+@keyframes  random {
+  15% { color: red; } 
+  30% { color: yellow; } 
+  45% { color: green; } 
+  60% { color: blue; }
+  75% { color: white; }  
 }
 
 #menuToggle input:checked ~ ul{

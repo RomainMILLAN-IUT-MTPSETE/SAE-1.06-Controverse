@@ -6,45 +6,72 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--LINKS-->
-        <!--On lie la page de style 'app-mobile.css' pour le CSS-->
-        <link rel="stylesheet" href="css/navMobile.css">
-        <link rel="stylesheet" href="css/contact.css">
+        <!--On lie la page de style pour le CSS-->
+        <link rel="stylesheet" href="css/page_standard.css">
+        <!--On lie la class navMobile.css UNIQUEMENT si la page est en-dessous de 850px-->
+        <link rel="stylesheet" media="screen and (max-width: 850px)" href="css/navMobile.css">
+        <!--On lie la class navMobile.css UNIQUEMENT si la page est aux-dessus de 850px-->
+        <link rel="stylesheet" media="screen and (min-width: 850px)" href="css/navDekstop.css">
         <!--OTHERS-->
         <!--On définie le titre de la page-->
         <title>Contact | Le travail en Open Space</title>
     </head>
     <body>
-        <div class="header">
-            <nav class="mobile" role="navigation">
+        <nav class="mobile">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+    
+                <ul id="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="page1.html">Chronologie</a></li>
+                    <li><a href="page1.html">Aujourd'hui</a></li>
+                    <li><a href="page1.html">Controverse</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Début du HEADER de la Page-->
+        <header>
+            <!--Navigation mobile-->
+            <nav class="mobile">
                 <div id="menuToggle">
                     <input type="checkbox"/>
                     <span></span>
                     <span></span>
                     <span></span>
-
+        
                     <ul id="menu">
-                        <a href="index.html"><li>Accueil</li></a>
-                        <a href="#"><li>Chronologie</li></a>
-                        <a href="#"><li>Aujourd'hui</li></a>
-                        <a href="#"><li>Controverse</li></a>
-                        <a href="contact.html"><li>Contact</li></a>
+                        <li><a href="index.html"></a>Accueil</li>
+                        <li><a href="page1.html">Chronologie</a></li>
+                        <li><a href="page1.html">Aujourd'hui</a></li>
+                        <li><a href="page1.html">Controverse</a></li>
+                        <li><a href="contact.html"></a>Contact</li>
                     </ul>
                 </div>
             </nav>
-            
+            <!--Titre de la page-->
+            <div class="container">
+                <div class="title">
+                    <h1>Chronologie de L'Open Space</h1>
+                </div>
+            </div>
+            <!--Navigation Desktop-->
             <nav class="desktop">
                 <a href="index.html"><p id="accueil">Accueil</p></a>
-                <div id="ControverseD">
+                <div id="deroulant">
                     <a href="#"><p>Controverse</p></a>
                     <div class="submenu">
-                        <a href="#"><p>•Chronologie</p></a>
-                        <a href="#"><p>•Aujourd'hui</p></a>
-                        <a href="#"><p>•Controverse</p></a>
+                        <a href="page1.html"><p>• Chronologie de l'Open Space</p></a>
+                        <a href="page2.html"><p>• De nos jours</p></a>
+                        <a href="page3.html"><p>• Le futur de la controverse</p></a>
                     </div>
                 </div>
                 <a href="contact.html"><p>Contact</p></a>
             </nav>
-        </div>
+        </header>
         <div class="contact">
             <form action="#" method="post">
                 <fieldset id="informationPerso">
