@@ -35,10 +35,52 @@ main .corpus {
     border: 2px solid #d0d0d5;
     box-shadow: 6px 5px 5px rgb(222, 216, 215 );
 }
+main .section_title{
+    width: 40%;
+    height: 4vh;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:  2;
+    clear: both;
+    margin-top:5vh;
+    margin-left:2vh;
+
+    border-radius: 2vh;
+    border: 2px solid #d0d0d5;
+    box-shadow: 6px 5px 5px #B1E0B9;
+    
+}
+h4{
+padding: 0.5vh;
+text-align: center;
+font-family: "RobotoRegular";
+}
+h4::first-letter{
+    color:#50b962;
+    font-size:3vh;
+}
 
 
 /*Si la page est en dessous de 992px*/
 @media(max-width:992px){
+    main .section_title{
+        width: 40%;
+        height: 6vh;
+        font-size: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink:  2;
+        clear: both;
+        margin-top:5vh;
+        margin-left:2vh;
+    
+        border-radius: 2vh;
+        border: 2px solid #d0d0d5;
+        box-shadow: 6px 5px 5px #B1E0B9;}
+        
     
     main{flex-direction:column;
         padding:0;
@@ -52,7 +94,6 @@ main .corpus {
         font-size:2vh;
         font-style:bold;
     }
-
     .image{
         width: 100%;
         margin: auto;
@@ -86,7 +127,7 @@ main .corpus {
         
     .image{
     /* paramètre de responsivité du design*/
-        width: 30%;
+        width: 10%;
         margin: 1vh;
         clear:both;
         border-radius: 3vh;
