@@ -6,6 +6,7 @@ body {
     width: 100%;
     font-family: "RobotoRegular";
     background-color: #fdfdfd;
+    outline-style: none;
 }
 a{
     text-decoration: none;
@@ -29,63 +30,62 @@ body p{
 
 .contact {
     font-family: RobotoRegular;
+    outline-style: none;
 }
 
+.contact form {
+    width: 30%;
+    min-width: 450px;
+    background-color: #f0f0f0;
+    margin: auto;
+    margin-top: 50px;
+    font-family: RobotoRegular;
+    outline-style: none;
+    border-radius: 15px;
+}
+.contact form .user-content--contacter {
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+}
 
-.contact fieldset:first-child{
-    margin-top: 25px;
-}
-.contact fieldset:nth-child(2){
-    margin-top: 25px;
-}
-fieldset{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    width: 85vw;
-    margin-left: 5vw;
-    border-radius: 10px;
-}
-fieldset label{
+.contact form label {
     margin-top: 15px;
 }
-fieldset label:first-child {
-    margin-top: 0px;
+
+.contact form input {
+    animation: ease-in-out;
+    outline-style: none;
+    transition-duration: 0.3s;
+    border:none;
+    padding: 10px;
+    border-bottom: 2px solid #F3F4F7;
+    border-left: 2px solid #f0f0f0;
+    margin-left: -2px;
 }
-fieldset input{
-    width: 250px;
-    height: 20px;
-    font-size: 20px;
+.contact form input:focus {
+    border-bottom: 2px solid #B1E0B9;
 }
-fieldset select {
-    height: 25px;
-    width: 260px;
-    font-size: 20px;
+
+#pays {
+    width: 150%;
+    padding: 10px;
 }
-input[type=submit]{
-    height: 50px;
-    width: 200px;
-    border-radius: 15px;
-    display: block;
-    margin: auto;
-    margin-top: 15px; 
-    margin-bottom: 15px;
-    font-size: 25px;
+#know {
+    width: 75%;
+    padding: 10px;
+    border-left: 1px solid #000000;
+    margin-left: -2px;
+}
+
+.contact form input[type=submit]{
+    width: 75%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding: 17.5px 25px 17.5px 25px;
     background-color: #B1E0B9;
 }
-
-@media(min-width: 1000px){
-    fieldset{
-        width: 750px;
-        margin-left: 150px;
-    }
-
-    input[type=submit]{
-        margin-left: 80vw;
-        margin-top: -25px;
-    }
-}
-
 
 
 
