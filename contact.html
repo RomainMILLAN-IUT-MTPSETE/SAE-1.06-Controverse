@@ -22,18 +22,18 @@
         <!--Début du HEADER de la Page-->
         <header>
             <!--Navigation mobile-->
-            <nav class="mobile--nav" role="navigation">
+            <nav class="mobile--nav">
                 <div id="menuToggle">
                     <input type="checkbox" />
                     <span class="menu-icon"></span>
                     <span class="menu-icon"></span>
                     <span class="menu-icon"></span>
                     <ul id="menu">
-                        <a href="./index.html"><span class="color-nav">•</span> Accueil</a>
-                        <a href="./page1.html"><span class="color-nav">•</span> La Chronologie de l'Open Space</a>
-                        <a href="./page1.html"><span class="color-nav">•</span> Open Space de nos jours</a>
-                        <a href="./page1.html"><span class="color-nav">•</span> Le Futur de l'Open Space</a>
-                        <a href="./contact.html"><span class="color-nav">•</span> Nous Contacter ?</a>
+                        <li><a href="index.html"><span class="color-nav">•</span> Accueil</a></li>
+                        <li><a href="./chronologie.html"><span class="color-nav">•</span> La Chronologie de l'Open Space</a></li>
+                        <li><a href="./aujourdhui.html"><span class="color-nav">•</span> Open Space de nos jours</a></li>
+                        <li><a href="./futur.html"><span class="color-nav">•</span> Le Futur de l'Open Space</a></li>
+                        <li><a href="./contact.html"><span class="color-nav">•</span> Nous Contacter ?</a></li>
                     </ul>
                 </div>
             </nav>
@@ -49,9 +49,9 @@
                 <div id="deroulant">
                     <a href="#"><p>Controverse</p></a>
                     <div class="submenu">
-                        <a href="page1.html"><p>• Chronologie de l'Open Space</p></a>
-                        <a href="page2.html"><p>• De nos jours</p></a>
-                        <a href="page3.html"><p>• Le futur de la controverse</p></a>
+                        <a href="chronologie.html"><p>• Chronologie de l'Open Space</p></a>
+                        <a href="aujourdhui.html"><p>• De nos jours</p></a>
+                        <a href="futur.html"><p>• Le futur de la controverse</p></a>
                     </div>
                 </div>
                 <a href="contact.html"><p>Contact</p></a>
@@ -322,8 +322,8 @@
                             <input type="date" id="date"/>
                         </div>
                         <div class="flex-column">
-                            <label for="wheredoyouknow">Comment connaisez-nous</label>
-                            <select name="wheredoyouknow" id="know">
+                            <label for="know">Comment connaisez-nous</label>
+                            <select name="know" id="know">
                                 <option value="rs">Les réseaux sociaux</option>
                                 <option value="bab">Une personne que vous connaisez</option>
                                 <option value="mail">Promotion mail</option>

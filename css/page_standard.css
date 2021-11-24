@@ -92,7 +92,7 @@ h4::first-letter{
         margin-right:auto;
         width:90%;
         font-size:2vh;
-        font-style:bold;
+        font-family: RobotoBold;
     }
     .image{
         width: 100%;
@@ -108,7 +108,6 @@ h4::first-letter{
 /*Si la page est au dessus de 992px*/
 @media(min-width:992px){
 
-
     main{flex-direction:row;
             padding:0;
             flex-wrap: wrap;
@@ -119,7 +118,7 @@ h4::first-letter{
             margin-right:auto;
             width:90%;
             font-size:2vh;
-            font-style:bold;
+            font-family: RobotoBold;
         }
     nav.desktop{display:flex;}
     nav.mobile{display:none;}
