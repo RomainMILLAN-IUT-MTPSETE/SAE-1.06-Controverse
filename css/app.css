@@ -19,6 +19,15 @@ a{
     font-family: "RobotoBold";
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 /*Ajout des fonts*/
 @font-face {
     font-family: RobotoRegular;
