@@ -66,6 +66,9 @@ body p{
 .contact form input:focus {
     border-bottom: 2px solid #B1E0B9;
 }
+textarea{
+    outline-style: none;
+}
 
 #pays {
     width: 150%;
