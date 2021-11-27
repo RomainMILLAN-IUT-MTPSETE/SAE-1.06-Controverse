@@ -62,7 +62,6 @@ h4::first-letter{
     font-size:3vh;
 }
 
-
 /*Si la page est en dessous de 992px*/
 @media(max-width:992px){
     main .section_title{
