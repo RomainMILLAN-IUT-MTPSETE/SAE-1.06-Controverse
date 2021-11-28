@@ -68,6 +68,9 @@ footer{
     border: 2px solid #d0d0d5;
     box-shadow: 6px 5px 5px rgb(222, 216, 215 );
 }
+.bibliographie .line {
+    margin-top: 2vh;
+}
 footer a{
     text-decoration:none;
     padding:0.5vh;

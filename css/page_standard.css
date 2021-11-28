@@ -44,8 +44,8 @@ main .section_title{
     align-items: center;
     flex-shrink:  2;
     clear: both;
-    margin-top:5vh;
-    margin-left:2vh;
+    margin-top: 12.5vh;
+    margin-left: 2vh;
 
     border-radius: 2vh;
     border: 2px solid #d0d0d5;
@@ -67,16 +67,7 @@ h4::first-letter{
     main .section_title{
         width: 40%;
         height: 6vh;
-        font-size: 2vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-shrink:  2;
-        clear: both;
-        margin-top:5vh;
-        margin-left:2vh;
-    
-        border-radius: 2vh;
+
         border: 2px solid #d0d0d5;
         box-shadow: 6px 5px 5px #B1E0B9;}
         
