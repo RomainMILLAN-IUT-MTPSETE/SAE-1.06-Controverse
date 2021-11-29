@@ -1,0 +1,63 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+    margin-top:5vh;
+    margin-bottom:4vh;
+    flex-grow:1;
+    flex-shrink:  1;
+
+
+}
+.bibliographie{
+    max-width: 100%;
+    width: 40%;
+    align-items: center;
+
+    flex-grow:1;
+    flex-shrink:  1;
+
+    border-radius: 2vh;
+    border: 2px solid #d0d0d5;
+    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+}
+footer .p{
+    display: flex;
+    flex-direction:row;
+}
+.bibliographie .line {
+    display: flex;
+    align-items: center;
+    text-justify: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    font-size: 1.5vh;
+    margin-top: 1vh;
+}
+
+footer a{
+    position: relative;
+    display: flex;
+    text-decoration:none;
+    font-size: 1.5vh;
+}
+
+@media (max-width: 992px){
+    .bibliographie .line {
+        display: flex;
+        align-items: center;
+        text-justify: center;
+        flex-direction: row;
+        flex-wrap:wrap;
+        font-size: 1.0vh;
+        margin-top: 0.5vh;
+    }
+    footer a{
+        position: relative;
+        display: flex;
+        text-decoration:none;
+        font-size: 1.15vh;
+    }
+}
+    

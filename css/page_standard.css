@@ -37,13 +37,11 @@ main .corpus {
 }
 main .section_title{
     width: 40%;
-    height: 4vh;
     font-size: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink:  2;
-    clear: both;
+
     margin-top: 12.5vh;
     margin-left: 2vh;
 
@@ -53,7 +51,9 @@ main .section_title{
     
 }
 h4{
+margin: auto;
 padding: 0.5vh;
+flex-shrink: 1;
 text-align: center;
 font-family: "RobotoRegular";
 }
@@ -65,8 +65,7 @@ h4::first-letter{
 /*Si la page est en dessous de 992px*/
 @media(max-width:992px){
     main .section_title{
-        width: 40%;
-        height: 6vh;
+        width: 50%;
 
         border: 2px solid #d0d0d5;
         box-shadow: 6px 5px 5px #B1E0B9;}
@@ -85,13 +84,14 @@ h4::first-letter{
         font-family: RobotoBold;
     }
     .image{
-        width: 100%;
-        margin: auto;
+        position:relative;
+        width: 90%;
+        clear: both;
         flex-grow: 3;
         border-radius: 3vh;
         box-shadow: 6px 5px 5px rgb(222, 216, 215 );
         margin-top: 5vh;
-        border: solid 0.25vh black;
+        border: solid 0.25vh #d0d0d5;
     }
 }
     

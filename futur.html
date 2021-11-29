@@ -1,140 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <!--On passe la page en UTF-8-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--LINKS-->
-        <!--On lie la page de style pour le CSS-->
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/page_standard.css">
-        <!--On lie la class navMobile.css UNIQUEMENT si la page est en-dessous de 850px-->
-        <link rel="stylesheet" media="screen and (max-width: 850px)" href="css/navMobile.css">
-        <!--On lie la class navMobile.css UNIQUEMENT si la page est aux-dessus de 850px-->
-        <link rel="stylesheet" media="screen and (min-width: 850px)" href="css/navDekstop.css">
-        <!--OTHERS-->
-        <!--On définie le titre de la page-->
-        <title>Le futur de l'Open Space</title>
-    </head>
-    <body>
-        <!--Début du HEADER de la Page-->
-        <header>
-            <!--Navigation mobile-->
-            <nav class="mobile--nav">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span class="menu-icon"></span>
-                    <span class="menu-icon"></span>
-                    <span class="menu-icon"></span>
-                    <ul id="menu">
-                        <li><a href="index.html"><span class="color-nav">•</span> Accueil</a></li>
-                        <li><a href="./chronologie.html"><span class="color-nav">•</span> La Chronologie de l'Open Space</a></li>
-                        <li><a href="./aujourdhui.html"><span class="color-nav">•</span> Open Space de nos jours</a></li>
-                        <li><a href="./futur.html"><span class="color-nav">•</span> Le Futur de l'Open Space</a></li>
-                        <li><a href="./contact.html"><span class="color-nav">•</span> Nous Contacter ?</a></li>
-                    </ul>
+
+<head>
+    <!--On passe la page en UTF-8-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINKS-->
+    <!--On lie la page de style pour le CSS-->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/page_standard.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--On lie la class navMobile.css UNIQUEMENT si la page est en-dessous de 850px-->
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="css/navMobile.css">
+    <!--On lie la class navMobile.css UNIQUEMENT si la page est aux-dessus de 850px-->
+    <link rel="stylesheet" media="screen and (min-width: 850px)" href="css/navDekstop.css">
+    <!--OTHERS-->
+    <!--On définie le titre de la page-->
+    <title>Le futur de l'Open Space</title>
+</head>
+
+<body>
+    <!--Début du HEADER de la Page-->
+    <header>
+        <!--Navigation mobile-->
+        <nav class="mobile--nav">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <ul id="menu">
+                    <li><a href="index.html"><span class="color-nav">•</span> Accueil</a></li>
+                    <li><a href="./chronologie.html"><span class="color-nav">•</span> La Chronologie de l'Open Space</a>
+                    </li>
+                    <li><a href="./aujourdhui.html"><span class="color-nav">•</span> Open Space de nos jours</a></li>
+                    <li><a href="./futur.html"><span class="color-nav">•</span> Le Futur de l'Open Space</a></li>
+                    <li><a href="./contact.html"><span class="color-nav">•</span> Nous Contacter ?</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Titre de la page-->
+        <div class="container">
+            <div class="title">
+                <h1>Le futur de l'Open Space</h1>
+            </div>
+        </div>
+        <!--Navigation Desktop-->
+        <nav class="desktop">
+            <a href="index.html">
+                <p id="accueil">Accueil</p>
+            </a>
+            <div id="deroulant">
+                <a href="#">
+                    <p>Controverse</p>
+                </a>
+                <div class="submenu">
+                    <a href="chronologie.html">
+                        <p>• Chronologie de l'Open Space</p>
+                    </a>
+                    <a href="aujourdhui.html">
+                        <p>• De nos jours</p>
+                    </a>
+                    <a href="futur.html">
+                        <p>• Le futur de la controverse</p>
+                    </a>
                 </div>
-            </nav>
-            <!--Titre de la page-->
-            <div class="container">
-                <div class="title">
-                    <h1>Le futur de l'Open Space</h1>
-                </div>
             </div>
-            <!--Navigation Desktop-->
-            <nav class="desktop">
-                <a href="index.html"><p id="accueil">Accueil</p></a>
-                <div id="deroulant">
-                    <a href="#"><p>Controverse</p></a>
-                    <div class="submenu">
-                        <a href="chronologie.html"><p>• Chronologie de l'Open Space</p></a>
-                        <a href="aujourdhui.html"><p>• De nos jours</p></a>
-                        <a href="futur.html"><p>• Le futur de la controverse</p></a>
-                    </div>
-                </div>
-                <a href="contact.html"><p>Contact</p></a>
-            </nav>
-        </header>
-        <!--Début du contenue de la page-->
-        <main>
-            <!--Quelques balise div, avec comme class 'section_title', pour indiquer qu'il y a un titre dans cette balise-->
-            <div class="section_title"><h4>De l'origine aux années 60</h4></div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'section_title', pour indiquer qu'il y a un titre dans cette balise-->
-            <div class="section_title"><h4>Titre de la section</h4></div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
-            <div class="corpus">
-                <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-            </div>
-            <!--ET LES IMAGES DOIVENT PRENDRE LA CLASSE image-->
-            <img src="assets/ImageTest.svg" class="image" alt="Image background HOME" />
-        </main>
-    </body>
+            <a href="contact.html">
+                <p>Contact</p>
+            </a>
+        </nav>
+    </header>
+    <!--Début du contenue de la page-->
+    <main>
+        <!--Quelques balise div, avec comme class 'section_title', pour indiquer qu'il y a un titre dans cette balise-->
+        <div class="section_title">
+            <h4>De l'origine aux années 60</h4>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'section_title', pour indiquer qu'il y a un titre dans cette balise-->
+        <div class="section_title">
+            <h4>Titre de la section</h4>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--Quelques balise div, avec comme class 'corpus', pour indiquer qu'il y a du texte dans ces balises-->
+        <div class="corpus">
+            <!--Balise type de contenu, CHAQUE BULLE DE NOTES DOIVENT PRENDRE LA CLASSE corpus-->
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                sit
+                amet.</p>
+        </div>
+        <!--ET LES IMAGES DOIVENT PRENDRE LA CLASSE image-->
+        <img src="assets/ImageTest.svg" class="image" alt="Image background HOME" />
+    </main>
+</body>
+
 </html>
