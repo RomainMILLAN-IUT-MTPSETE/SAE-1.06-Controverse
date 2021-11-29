@@ -35,7 +35,7 @@ main .corpus {
     border: 2px solid #d0d0d5;
     box-shadow: 6px 5px 5px rgb(222, 216, 215 );
 }
-main .section_title{
+.section_title{
     width: 40%;
     font-size: 2vh;
     display: flex;
@@ -64,7 +64,7 @@ h4::first-letter{
 
 /*Si la page est en dessous de 992px*/
 @media(max-width:992px){
-    main .section_title{
+    .section_title{
         width: 50%;
 
         border: 2px solid #d0d0d5;
@@ -115,8 +115,9 @@ h4::first-letter{
         
     .image{
     /* paramètre de responsivité du design*/
-        width: 40%;
-        margin-left: 30%;
+        width: 20%;
+        height:auto;
+        margin:1vh;
         align-items:center;
         clear:both;
         border-radius: 3vh;

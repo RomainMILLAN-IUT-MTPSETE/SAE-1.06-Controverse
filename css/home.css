@@ -25,9 +25,7 @@
     clear: both;
     flex-grow: 3;
     border-radius: 1vh;
-    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
     margin-top: 10vh;
-    border: solid 0.25vh #d0d0d5;
 }
 .widthHome {
     width: 70vw;
@@ -76,4 +74,33 @@ body p{
 }
 body > div.home > p.introHome.widthHome{
     margin-top:5vh;
+}
+
+body > div.home > img{
+    position:relative;
+    width: 50%;
+    height: 10%;
+    margin-left:auto;
+    margin-right:auto;
+    clear: both;
+    flex-grow: 3;
+    border-radius: 3vh;
+    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+    margin-top: 5vh;
+    border: solid 0.25vh #d0d0d5;}
+
+
+/* Comme tout bon principe, une exeption à la règle,*/
+
+@media (max-width:992px){
+body > div.home > img{
+        position:relative;
+        justify-content: center;
+        width: 90%;
+        clear: both;
+        flex-grow: 3;
+        border-radius: 3vh;
+        box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+        margin-top: 5vh;
+        border: solid 0.25vh #d0d0d5;}
 }
