@@ -28,31 +28,36 @@ footer .p{
 }
 .bibliographie .line {
     display: flex;
-    align-items: center;
     text-justify: center;
     flex-direction: row;
     flex-wrap:wrap;
     font-size: 1.5vh;
     margin-top: 1vh;
 }
+.bibliographie .line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    font-size: 1vh;
+    margin-top: 0.5vh;
+}
 
 footer a{
     position: relative;
     display: flex;
     text-decoration:none;
-    font-size: 1.5vh;
+    font-size: 1vh;
 }
 
 @media (max-width: 992px){
-    .bibliographie .line {
-        display: flex;
-        align-items: center;
-        text-justify: center;
-        flex-direction: row;
-        flex-wrap:wrap;
-        font-size: 1.0vh;
-        margin-top: 0.5vh;
-    }
+   .bibliographie .line {
+    display: flex;
+    text-justify: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    font-size: 1.5vh;
+    margin-top: 1vh;}
+
     footer a{
         position: relative;
         display: flex;

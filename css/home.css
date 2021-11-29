@@ -80,7 +80,7 @@ body > div.home > img{
     position:relative;
     width: 50%;
     height: 10%;
-    margin-left:auto;
+    margin-left:25%;
     margin-right:auto;
     clear: both;
     flex-grow: 3;
@@ -88,6 +88,10 @@ body > div.home > img{
     box-shadow: 6px 5px 5px rgb(222, 216, 215 );
     margin-top: 5vh;
     border: solid 0.25vh #d0d0d5;}
+
+.acteur h4 {
+    justify-content: flex-start;
+}
 
 
 /* Comme tout bon principe, une exeption à la règle,*/
@@ -97,6 +101,7 @@ body > div.home > img{
         position:relative;
         justify-content: center;
         width: 90%;
+        margin-left: 2vh;
         clear: both;
         flex-grow: 3;
         border-radius: 3vh;
