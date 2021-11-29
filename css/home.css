@@ -74,5 +74,6 @@ body p{
     text-justify: inter-word;
 
 }
-
-
+body > div.home > p.introHome.widthHome{
+    margin-top:5vh;
+}
