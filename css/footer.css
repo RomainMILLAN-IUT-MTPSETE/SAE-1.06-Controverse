@@ -28,7 +28,7 @@ footer .p{
 }
 .bibliographie .line {
     display: flex;
-    text-justify: center;
+    text-justify: auto;
     flex-direction: row;
     flex-wrap:wrap;
     font-size: 1.5vh;
@@ -52,7 +52,7 @@ footer a{
 @media (max-width: 992px){
    .bibliographie .line {
     display: flex;
-    text-justify: center;
+    text-justify: auto;
     flex-direction: row;
     flex-wrap:wrap;
     font-size: 1.5vh;
